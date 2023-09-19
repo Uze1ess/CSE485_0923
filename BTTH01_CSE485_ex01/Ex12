@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<?php
+    $numbers = [
+        'key1' => 12,
+        'key2' => 30,
+        'key3' => 4,
+        'key4' => -123,
+        'key5' => 1234,
+        'key6' => -12565,
+       ];
+    $len = count($numbers);
+    $max = 0;
+    $min = 0;
+
+   foreach($numbers as $keys => $values){
+        if($max < $values){
+            $max = $values;
+        }
+   }
+
+   echo $max;
+
+   
+?>
