@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<?php
+    $arrs1 = ['a','b','ABC'];
+    $arrs2 = ['1','A','B','C'];
+    $len = count($arrs1);
+
+    for($i=0; $i < $len; $i++){
+        $arrs1[$i] = strtolower($arrs1[$i]);
+        $arrs2[$i] = strtolower($arrs2[$i]);
+    }
+
+    var_dump($arrs1);
+    var_dump($arrs2);
+
+?>
