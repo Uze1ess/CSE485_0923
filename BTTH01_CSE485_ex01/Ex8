@@ -1,1 +1,40 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<?php
+    $array = ['programming', 'php', 'basic', 'dev', 'is', 'program is PHP'];
+
+    $len_max = 0;
+    $string_max = "";
+    $len_min = 0;
+    $string_min = "";
+
+    foreach($array as $value){
+        if(strlen($value) > $len_max){
+            $len_max = strlen($value);
+            $string_max = $value;
+        }
+    }
+
+    foreach($array as $value){
+        if(strlen($value) < $len_max){
+            $len_min = strlen($value);
+            $string_min = $value;
+        }
+    }
+
+    echo $string_max. "</br>";
+    echo $string_min. "</br>";
+
+
+?>
