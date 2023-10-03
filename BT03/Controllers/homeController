@@ -1,0 +1,11 @@
+<?php
+    include "services/sinhvienService.php";
+    class HomeController{
+        public function index(){
+            $stdService = new sinhvienService();
+            $students = $stdService->getAllStudent();
+
+            include "views/home/index.php";
+        }
+    }
+?>
