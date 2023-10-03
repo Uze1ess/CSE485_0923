@@ -1,0 +1,20 @@
+<?php
+    include "models/sinhvien.php";
+
+    class sinhvienService{
+        private $listofStudents;
+
+        public function __construct()
+        {
+            $std1 = new SinhVien('0101010101','Ten hoc sinh 1','1ln@gmail.com','2003-08-12');
+            $std2 = new SinhVien('0202020202','Ten hoc sinh 2','2ln@gmail.com','2002-09-12');
+            $std3 = new SinhVien('0303030303','Ten hoc sinh 3','3ln@gmail.com','2002-05-13');
+            $this->listofStudents[] = $std1;
+            array_push($this->listofStudents, $std2, $std3); 
+        }
+
+        public function getAllStudent(){
+            return $this->listofStudents;
+        }
+    }
+?>
